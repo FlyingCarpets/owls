@@ -7,12 +7,17 @@ import {
     CardContent
 } from '@material-ui/core';
 
+import { withContext } from './utils/withContext';
+
 import './cards.css';
 
 const cardCount = 9;
 
 class Cards extends Component {
     render() {
+        // ready to use as prop
+        const { language } = this.props;
+
         return (
             <Grid container className="container" spacing={ 16 }>
                 { [ ...Array(cardCount) ].map(i => (
@@ -35,4 +40,4 @@ class Cards extends Component {
     }
 }
 
-export default Cards;
+export default withContext(Cards);
