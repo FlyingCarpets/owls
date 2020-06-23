@@ -2,9 +2,7 @@
   "extends": [
     "config:base",
     "schedule:earlyMondays",
-    "group:all",
-    "assigneesFromCodeOwners:true",
-    "assigneesSampleSize:1"
+    "group:all"
   ],
   "packageRules": [
     {
