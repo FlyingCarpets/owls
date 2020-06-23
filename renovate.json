@@ -2,13 +2,13 @@
   "extends": [
     "config:base",
     "schedule:earlyMondays",
-    "group:all"
-  ],
-  "assigneesFromCodeOwners": true,
-  "assigneesSampleSize": 1,
-  "packageRules": [
+    "group:all",
+    "packageRules": [
     {
       "updateTypes": ["major", "minor"]
     }
-  ]
+  ],
+  ],
+  "assigneesFromCodeOwners": true,
+  "assigneesSampleSize": 1
 }
